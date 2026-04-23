@@ -1,0 +1,54 @@
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: green;
+  margin: 0;
+}
+
+#card {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#paloarriba, #paloabajo {
+  font-size: 50px;
+}
+
+#numero {
+  font-size: 150px;
+  color: black;
+  align-self: center;
+}
+
+.diamantes::before {
+  color: red;
+  content: "♦";
+}
+.corazones::before {
+  color: red;
+  content: "♥";
+}
+.treboles::before {
+  color: black;
+  content: "♣";
+}
+.picas::before {
+  color: black;
+  content: "♠";
+}
+#paloabajo {
+  transform: rotate(180deg);
+}
